@@ -1,0 +1,106 @@
+
+body {
+  padding: 0;
+  margin: 0;
+
+    .App {
+      font-family: Helvetica;
+      margin: 133px 44px 123px 44px;
+      
+      .main-heading {
+        font-size: 64px;
+        font-weight: 400;
+        max-width: 900px;
+        padding-left: 32px;
+      }
+      
+        .container {
+          margin: 0;
+          padding: 0;
+          max-width: 1440px;
+          min-width: 480px;
+          display: flex;
+          flex-wrap: wrap;
+          
+        .card-container {
+          max-width: 418.67px;
+          border-bottom: 1px solid #B4B6B8;
+          margin: 96px 0 0 32px;
+          overflow: hidden;
+
+          .card-image {
+            border-radius: 20px;
+            max-width: 418.67px;
+          }
+          
+          .card-heading {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 36px;
+            letter-spacing: -0.02em;
+            margin: 31.89px 0 24px 0;
+          }
+
+          .card-text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: -0.02em;
+            color: #535759;
+            padding-bottom: 48px;
+          }
+        } 
+        
+        .main-heading {
+          font-size: 64px;
+          font-weight: 400;
+          max-width: 900px;
+          padding-left: 32px;
+          min-width: 575px;
+        }
+      }
+    }
+  }
+
+@media only screen and (min-width: 1440px) {
+  .hidden-card {
+    width: 418.67px;
+    height: 500.906px;
+    margin: 96px 0 0 32px;
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .App {      
+    margin: 0 !important;
+
+    .main-heading {
+      padding-top: 128px;
+      margin: 0;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 575px) {
+    .App {      
+      margin: 0 !important;
+
+      .main-heading {
+        padding-left: 16px;
+      }
+
+      .container {
+        justify-content: center;
+        max-width: 288px;
+        
+
+        .card-container {
+          margin: 96px 0 0 0 !important;
+        }
+      }
+  }
+
+}
+

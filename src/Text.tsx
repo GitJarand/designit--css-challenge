@@ -3,5 +3,5 @@ type TextProps = {
 };
 
 export default function Text({ body }: TextProps) {
-  return <div>{body}</div>;
+  return <div className="card-text">{body}</div>;
 }

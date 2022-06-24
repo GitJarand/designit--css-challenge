@@ -10,11 +10,10 @@ type CardProps = {
 
 export default function Card({ heading, body, image, imageAlt }: CardProps) {
   return (
-    <article>
-      {/* Setting width temporary so we can see what is going on. */}
-      <img src={image} style={{ maxWidth: '200px' }} alt={imageAlt} />
-      <Heading heading={heading} size="medium" />
-      <Text body={body} />
+    <article className="card-container">
+      <img src={image} alt={imageAlt} className="card-image"/>
+      <Heading heading={heading} size="medium"/>
+      <Text body={body}/>
     </article>
   );
 }
